@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/TECNO/KG8
+DEVICE_PATH := device/tecno/neon
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -26,7 +26,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := TECNO-KG8
+TARGET_OTA_ASSERT_DEVICE := neon
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := CY-KG8-H698-C
@@ -141,6 +141,9 @@ BOARD_USES_MTK_HARDWARE := true
 
 ## TWRP-Specific configuration
 TW_THEME := portrait_hdpi
+TARGET_SCREEN_DENSITY := 395
+TARGET_SCREEN_HEIGHT := 2460
+TARGET_SCREEN_WIDTH := 1080
 TW_DEVICE_VERSION := yeasinhossain23
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_USES_MKE2FS := true
@@ -148,8 +151,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 1200
 TW_MAX_BRIGHTNESS := 2047
-TW_Y_OFFSET := 80
-TW_H_OFFSET := -80
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_PYTHON := true
 TW_INCLUDE_NANO := true
@@ -158,6 +159,7 @@ TW_EXCLUDE_TWRPAPP := true
 TW_EXTRA_LANGUAGES := false
 TW_INCLUDE_NTFS_3G := true
 TW_NO_SCREEN_BLANK := true
+TW_USE_TOOLBOX := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
@@ -167,3 +169,18 @@ TW_FRAMERATE := 60
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# shrp
+SHRP_DEVICE_CODE := neon
+SHRP_PATH := device/tecno/$(SHRP_DEVICE_CODE)
+SHRP_MAINTAINER := yeasinhossain23
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A/B
+SHRP_AB := true
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb-otg
+SHRP_FLASH := 0
+SHRP_EXPRESS := true
+SHRP_DARK := true
+# SHRP_LITE := true
+
