@@ -12,17 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from KG8 device
-$(call inherit-product, device/TECNO/KG8/device.mk)
+$(call inherit-product, device/tecno/neon/device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := KG8
-PRODUCT_NAME := twrp_KG8
-PRODUCT_BRAND := TECNO
-PRODUCT_MODEL := TECNO KG8
-PRODUCT_MANUFACTURER := TECNO
+PRODUCT_DEVICE := neon
+PRODUCT_NAME := twrp_neon
+PRODUCT_BRAND := tecno
+PRODUCT_MODEL := tecno neon
+PRODUCT_MANUFACTURER := tecno
 
 PRODUCT_GMS_CLIENTID_BASE := android-tecno
 
