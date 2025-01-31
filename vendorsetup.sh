@@ -44,18 +44,20 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	  export FOX_ENABLE_APP_MANAGER=0
 	  export FOX_DISABLE_APP_MANAGER=1
     export OF_FLASHLIGHT_ENABLE=0
-    export FOX_USE_NANO_EDITOR=0
-    export FOX_EXCLUDE_NANO_EDITOR=1
+    export FOX_USE_NANO_EDITOR=1
+    export FOX_EXCLUDE_NANO_EDITOR=0
     export OF_KEEP_DM_VERITY_FORCED_ENCRYPTION=1
     export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
     export OF_MAINTAINER="yeasinhossain23"
+    export FOX_BUILD_TYPE="OFFICIAL"
     # screen settings
-	  #export OF_SCREEN_H=1612
-	  #export OF_STATUS_H=40
-	  export OF_ALLOW_DISABLE_NAVBAR=0
-	  export OF_STATUS_INDENT_LEFT=48
-	  export OF_STATUS_INDENT_RIGHT=48
-	  export OF_CLOCK_POS=2
+    export OF_SCREEN_H := 2400
+    export OF_STATUS_H := 95
+    export OF_STATUS_INDENT_LEFT := 56
+    export OF_STATUS_INDENT_RIGHT := 48
+    export OF_ALLOW_DISABLE_NAVBAR := 0
+    export OF_CLOCK_POS := 1
+
     export FOX_REMOVE_ZIP_BINARY=1
 	  export OF_SKIP_ORANGEFOX_PROCESS=1
 	
