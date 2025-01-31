@@ -19,7 +19,7 @@ $(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := neon
-PRODUCT_NAME := twrp_neon
+PRODUCT_NAME := omni_neon
 PRODUCT_BRAND := tecno
 PRODUCT_MODEL := tecno neon
 PRODUCT_MANUFACTURER := tecno
