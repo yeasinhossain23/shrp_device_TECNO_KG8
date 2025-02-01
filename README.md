@@ -1,4 +1,20 @@
 
+# Skyhawk Recovery Tree for Tecno Spark 8 Pro (KG8)
+![Tecno spark 8 pro](spark8pro.png)
+
+
+|Basic               |Spec Sheet|
+|--                  |--                                                            |
+|CPU                 |Octa-core (2×2.0 GHz Cortex-A75 & 6×1.8 GHz Cortex-A55)       |
+|Chipset             |MediaTek Helio G85 (12nm)                                     |
+|GPU                 |Mali-G52 MC2                                                  |
+|Memory              |4GB/6GB RAM                                                   |
+|Android Version     |11 (HiOS 7.6)                                                 |
+|Storage             |64/128GB                                                      |
+
+
+
+
 Blocking checks
 - [X] Correct screen/recovery size
 - [X] Working Touch, screen
@@ -8,7 +24,7 @@ Blocking checks
 - [X] ADB
 
 Medium checks
-- [ ] update.zip sideload
+- [X] update.zip sideload
 - [X] UI colors (red/blue inversions)
 - [X] Screen goes off and on
 - [X] F2FS/EXT4 Support, exFAT/NTFS where supported
@@ -32,18 +48,3 @@ Minor checks
 - [X] vibrate
 - [X] screenshot
 - [X] partition SD card
-
-
-# Twrp Recovery Tree for Tecno Spark 8 Pro (KG8)
-![Tecno spark 8 pro](spark8pro.png)
-
-
-|Basic               |Spec Sheet|
-|--                  |--                                                            |
-|CPU                 |Octa-core (2×2.0 GHz Cortex-A75 & 6×1.8 GHz Cortex-A55)       |
-|Chipset             |MediaTek Helio G85 (12nm)                                     |
-|GPU                 |Mali-G52 MC2                                                  |
-|Memory              |4GB/6GB RAM                                                   |
-|Android Version     |11 (HiOS 7.6)                                                 |
-|Storage             |64/128GB                                                      |
-
